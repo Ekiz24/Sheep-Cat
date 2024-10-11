@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myFx: {fileID: 461901887}
   hoverFx: {fileID: 8300000, guid: 5c775518c56672e4c9e9c2fbb44bf144, type: 3}
-  clickFx: {fileID: 8300000, guid: 09fec37fec059764a8a16d2980911be8, type: 3}
+  clickFx: {fileID: 0}
 --- !u!82 &461901887
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1193,22 +1193,6 @@ MonoBehaviour:
         - m_Target: {fileID: 461901886}
           m_TargetAssemblyTypeName: buttonSFX, Assembly-CSharp
           m_MethodName: HoverSound
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 461901886}
-          m_TargetAssemblyTypeName: buttonSFX, Assembly-CSharp
-          m_MethodName: ClickSound
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
