@@ -4,6 +4,8 @@ public class PauseGame : MonoBehaviour
 {
     private bool isPaused = false;
 
+    public GameObject pauseScreen;
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
@@ -11,10 +13,12 @@ public class PauseGame : MonoBehaviour
             if (isPaused)
             {
                 ResumeGame();
+                pauseScreen.SetActive(true);
             }
             else
             {
                 PauseGameMethod();
+                pauseScreen.SetActive(false);
             }
         }
     }
