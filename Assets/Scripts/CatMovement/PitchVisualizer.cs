@@ -7,7 +7,6 @@ public class PitchVisualizer : MonoBehaviour
     public AudioSource audioSource;
     public AudioDetector estimator;
     public TextMesh textFrequency;
-    public Transform Indicator;
 
     public float loudnessThreshold = 0.5f;
     public float loudnessSensibility = 100f;
@@ -25,13 +24,9 @@ public class PitchVisualizer : MonoBehaviour
         maxFrequency = estimator.frequencyMax;
     }
 
-    private void Update()
-    {
-        
-    }
-
     void UpdateVisualizer()
     {
+        float loudness = estimator.GetVolume(audioSource) * loudnessSensibility;
         var frequency = estimator.Estimate(audioSource);
 
         var srh = estimator.SRH;
@@ -43,31 +38,37 @@ public class PitchVisualizer : MonoBehaviour
             var value = srh[i] * 0.005f;
             positions[i].Set(position, value, 0);
         }
-
+        if (loudness > loudnessThreshold)
+        {
             textFrequency.text = string.Format("{0}\n{1:0.0} Hz", GetNameFromFrequency(frequency), lastFrequency);
-
+        }
+        else
+        {
+            textFrequency.text = " ";
+        }
         //UpdateIndicatorRotation(frequency);
     }
 
     string GetNameFromFrequency(float frequency)
     {
-        float loudness = estimator.GetVolume(audioSource) * loudnessSensibility;
+        //float loudness = estimator.GetVolume(audioSource) * loudnessSensibility;
 
-        if (loudness > loudnessThreshold)
-        {
+        //if (loudness > loudnessThreshold)
+        //{
             var noteNumber = Mathf.RoundToInt(12 * Mathf.Log(frequency / 440) / Mathf.Log(2) + 69);
             string[] names = {
             "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
             lastFrequency = frequency;
             return names[noteNumber % 12];
-        }
-        else
-        {
-            var noteNumber = Mathf.RoundToInt(12 * Mathf.Log(lastFrequency / 440) / Mathf.Log(2) + 69);
-            string[] names = {
-            "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
-            return names[noteNumber % 12];
-        }
+        //}
+        //else
+        //{
+            //var noteNumber = Mathf.RoundToInt(12 * Mathf.Log(lastFrequency / 440) / Mathf.Log(2) + 69);
+            //string[] names = {
+            //"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
+            //return names[noteNumber % 12];
+            //return null;
+        //}
     }
 
     //void UpdateIndicatorRotation(float frequency)

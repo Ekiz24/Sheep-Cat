@@ -51,13 +51,13 @@ public class PitchMover : MonoBehaviour
             case "C":
                 moveDirection = Vector2.down; // 向下移动
                 break;
-            case "E":
+            case "D":
                 moveDirection = Vector2.left; // 向左移动
                 break;
-            case "G":
+            case "E":
                 moveDirection = Vector2.right; // 向右移动
                 break;
-            case "B":
+            case "F":
                 moveDirection = Vector2.up; // 向上移动
                 break;
         }
