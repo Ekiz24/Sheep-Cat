@@ -6,17 +6,18 @@ TagManager:
   tags:
   - Cat
   - Sheep
+  - SheepCounter
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Sheep
   - Water
   - UI
   - Cat
   - Fence
-  - 
-  - 
+  - SheepCounter
+  - Goal
   - 
   - 
   - 
