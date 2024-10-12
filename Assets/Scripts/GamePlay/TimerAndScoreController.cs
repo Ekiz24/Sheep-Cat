@@ -17,6 +17,10 @@ public class TimerAndScoreController : MonoBehaviour
     private float scoreDecreaseTimer = 0f;
     public float scoreDecreaseInterval = 1f; // 每隔一秒减少一次分数
 
+    private void Start()
+    {
+        StartTimer();
+    }
 
     void Update()
     {
