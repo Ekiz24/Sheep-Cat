@@ -33,6 +33,7 @@ public class SheepEscapeFromCat : MonoBehaviour
             if (distance < 3)
             {
                 transform.position = Vector2.MoveTowards(sheepPosition, escapeDirection, sheepSpeed * Time.deltaTime);
+                //StartCoroutine(SheepRunning());
             }
             else
             {
