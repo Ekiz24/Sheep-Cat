@@ -13,12 +13,12 @@ public class PauseGame : MonoBehaviour
             if (isPaused)
             {
                 ResumeGame();
-                pauseScreen.SetActive(true);
+                pauseScreen.SetActive(false);
             }
             else
             {
                 PauseGameMethod();
-                pauseScreen.SetActive(false);
+                pauseScreen.SetActive(true);
             }
         }
     }

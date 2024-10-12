@@ -52,7 +52,6 @@ public class PitchVisualizer : MonoBehaviour
     string GetNameFromFrequency(float frequency)
     {
         float loudness = estimator.GetVolume(audioSource) * loudnessSensibility;
-        Debug.Log("loudness:"+loudness);
 
         if (loudness > loudnessThreshold)
         {

@@ -1,32 +1,48 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class VolumeController : MonoBehaviour
 {
-    public AudioSource backgroundMusicSource;
+    //all the scences have Audio Source with this script
 
-    public AudioSource[] soundEffectSource;
+    //static BGM Music; //is used to store the unique instance of background music
+    public AudioSource audioSource;
+    public Slider slider;
 
-    public Slider backgroundMusicSlider;
-
-    public Slider soundEffectSlider;
-
-    void Start()
+    void Awake()
     {
-        backgroundMusicSlider.value = backgroundMusicSource.volume;
-        soundEffectSlider.value = soundEffectSource[soundEffectSource.Length].volume;
+        //switch (Music)
+        //{
+        //    case null: //checks whether there is already an existing music instance
+        //        Music = this; //if not existing, it assigns the current instance to Music
+        //        break;
 
-        backgroundMusicSlider.onValueChanged.AddListener(SetBackgroundMusicVolume);
-        soundEffectSlider.onValueChanged.AddListener(SetSoundEffectVolume);
+        //    default: //if so, then destroy the current instance
+        //        Destroy(gameObject);
+        //        break;
+        //        //these are for keeping background music playing even if we are testing other scences
+        //        //and assuring there is always only one background music throughout the play
+        //}
+
+        //DontDestroyOnLoad(gameObject);
+
     }
 
-    public void SetBackgroundMusicVolume(float volume)
+    private void Start()
     {
-        backgroundMusicSource.volume = volume;
+        audioSource = GetComponent<AudioSource>();
     }
 
-    public void SetSoundEffectVolume(float volume)
+    private void Update()
     {
-        soundEffectSource[soundEffectSource.Length].volume = volume;
+        slider = FindObjectOfType<Slider>();
+        if (slider == null)
+        {
+            return;
+        }
+        audioSource.volume = slider.value;
     }
 }
