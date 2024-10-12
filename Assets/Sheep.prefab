@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3508568455175954275}
   - component: {fileID: 3508568455175954274}
   - component: {fileID: 2122602527518192558}
-  - component: {fileID: 2960007066274713755}
   m_Layer: 9
   m_Name: Sheep
   m_TagString: Sheep
@@ -159,19 +158,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &2960007066274713755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3508568455175954279}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e08945ee024b4400a239aaeb6a8e5a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  innerCollider: {fileID: 0}
 --- !u!1 &5142557219743812458
 GameObject:
   m_ObjectHideFlags: 0
