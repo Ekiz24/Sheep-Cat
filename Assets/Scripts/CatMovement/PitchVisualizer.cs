@@ -9,7 +9,7 @@ public class PitchVisualizer : MonoBehaviour
     public TextMesh textFrequency;
 
 
-    public float estimateRate = 30;
+    public float estimateRate = 8;
 
     void Start()
     {
