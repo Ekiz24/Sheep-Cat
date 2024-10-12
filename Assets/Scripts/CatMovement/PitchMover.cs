@@ -1,26 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 public class PitchMover : MonoBehaviour
 {
-    public AudioSource audioSource; // 用于获取音频输入
-    public AudioDetector estimator; // 用于音调估计
-    public float moveSpeed = 0.1f; // 移动速度
-    private Rigidbody2D rb; // 用于2D物理控制
+    public AudioSource audioSource;
+    public AudioDetector estimator;
+    public float moveSpeed = 0.1f;
+    public float loudnessSensibility = 100f;
+    public float loudnessThreshold = 0.5f;
+
+    private Rigidbody2D rb;
 
     void Start()
     {
-        // 获取 Rigidbody2D 组件
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        // 获取当前的频率估计
         var frequency = estimator.Estimate(audioSource);
+        float loudness = estimator.GetVolume(audioSource) * loudnessSensibility;
 
-        if (!float.IsNaN(frequency))
+        if (!float.IsNaN(frequency)&&loudness>loudnessThreshold)
         {
             // 获取音符名称
             string note = GetNameFromFrequency(frequency);

@@ -567,7 +567,7 @@ MonoBehaviour:
   audioSource: {fileID: 476559939}
   estimator: {fileID: 476559938}
   textFrequency: {fileID: 286664281}
-  estimateRate: 8
+  estimateRate: 2
 --- !u!114 &476559938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1086,7 +1086,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 476559939}
   estimator: {fileID: 476559938}
-  moveSpeed: 0.05
+  moveSpeed: 0.1
+  loudnessSensibility: 100
+  loudnessThreshold: 0.3
 --- !u!4 &759827990
 Transform:
   m_ObjectHideFlags: 0
