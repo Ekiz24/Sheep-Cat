@@ -597,7 +597,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -609,7 +609,7 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 1
+  BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   estimator: {fileID: 476559938}
   moveSpeed: 0.1
   loudnessSensibility: 100
-  loudnessThreshold: 0.3
+  loudnessThreshold: 2
 --- !u!4 &759827990
 Transform:
   m_ObjectHideFlags: 0
