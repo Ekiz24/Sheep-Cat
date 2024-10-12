@@ -20,7 +20,7 @@ public class GoalEvaluation : MonoBehaviour
     {
         sheepTag = GameObject.FindGameObjectsWithTag("Sheep");
         sheepNumber = sheepTag.Length;
-        //Debug.Log("The total number of sheep is " + sheepNumber);
+        Debug.Log("The total number of sheep is " + sheepNumber);
         timerScoreController = timerLimit.GetComponent<TimerAndScoreController>();
     }
 
@@ -44,10 +44,10 @@ public class GoalEvaluation : MonoBehaviour
 
     void TellTheNumber()
     {
-        //Debug.Log("There are " + goalSheepNumber + " sheep inside");
+        Debug.Log("There are " + goalSheepNumber + " sheep inside");
         if (sheepNumber == goalSheepNumber)
         {
-            //Debug.Log("All sheep are inside");
+            Debug.Log("All sheep are inside");
             goalPanel.SetActive(true);
             
             timerScoreController.StopTimer();
