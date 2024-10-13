@@ -56,6 +56,7 @@ public class SheepEscapeFromCat : MonoBehaviour
             isSheepStartMoving = true;
             animator.SetBool("isSheepStartMoving", true);
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -65,6 +66,7 @@ public class SheepEscapeFromCat : MonoBehaviour
             isSheepStartMoving = false;
             animator.SetBool("isSheepStartMoving", false);
         }
+        
     }
 
 
@@ -72,6 +74,7 @@ public class SheepEscapeFromCat : MonoBehaviour
     {
         yield return new WaitForSeconds(sheepMoveDuration);
         isSheepStartMoving = false;
+        animator.SetBool("isSheepStartMoving", false);
         SheepEscaping();
     }
 

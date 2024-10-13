@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 1b8f0954168f44231a23d8a8f2b58b83
   - enabled: 1
+    path: Assets/Scenes/1st Level.unity
+    guid: 32fdccf165cf8422fbf57f476369ff85
+  - enabled: 1
+    path: Assets/Scenes/2nd Level.unity
+    guid: 46ad96fb258964315a57b0fe268afa34
+  - enabled: 1
+    path: Assets/Scenes/3rd Level.unity
+    guid: 2606cbe5e940746f088e286ac50310a9
+  - enabled: 1
+    path: Assets/Scenes/4th Level.unity
+    guid: 375b8b1f4a2e3403da3ec243a9222d11
+  - enabled: 1
     path: Assets/Scenes/MicrophoneCat.unity
     guid: f2c656e0713314fed930796ee6ab93b7
   m_configObjects: {}
