@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3258502196739692482, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.838787
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 3258502196739692482, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -189,6 +189,18 @@ PrefabInstance:
     - target: {fileID: 3258502196739692486, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_Size.x
+      value: 2.9954042
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.152915
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0065099
       objectReference: {fileID: 0}
     - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_IsTrigger
@@ -1763,7 +1775,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Or Press "P"
+  m_text: Or Press "Enter"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 365afb0d48654d94b877c09d0eb7de89, type: 2}
   m_sharedMaterial: {fileID: 2013445032453297168, guid: 365afb0d48654d94b877c09d0eb7de89, type: 2}
@@ -7473,6 +7485,18 @@ PrefabInstance:
       value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_Size.x
+      value: 3.1618717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.013552785
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0065099
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -7490,12 +7514,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3258502196739692482, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6104813
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692482, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_LocalScale.y
       value: 10.216268
       objectReference: {fileID: 0}
     - target: {fileID: 3258502196739692482, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.83
+      value: -13.5248
       objectReference: {fileID: 0}
     - target: {fileID: 3258502196739692482, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7548,6 +7576,18 @@ PrefabInstance:
     - target: {fileID: 3258502196739692486, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_Size.x
+      value: 2.7627354
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.21312094
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0065099
       objectReference: {fileID: 0}
     - target: {fileID: 3258502196739692487, guid: 4bf46edd7e5474ba3b539db096d274bd, type: 3}
       propertyPath: m_IsTrigger
