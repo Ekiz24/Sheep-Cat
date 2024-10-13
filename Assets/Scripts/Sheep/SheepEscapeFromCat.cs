@@ -64,7 +64,6 @@ public class SheepEscapeFromCat : MonoBehaviour
         if (collision.tag == "Cat" && !isSheepStartMoving)
         {
             isSheepStartMoving = false;
-            animator.SetBool("isSheepStartMoving", false);
         }
         
     }
@@ -74,6 +73,7 @@ public class SheepEscapeFromCat : MonoBehaviour
     {
         yield return new WaitForSeconds(sheepMoveDuration);
         isSheepStartMoving = false;
+        animator.SetBool("isSheepStartMoving", false);
         SheepEscaping();
     }
 }

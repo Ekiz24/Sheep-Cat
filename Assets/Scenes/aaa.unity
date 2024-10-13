@@ -376,6 +376,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3508568455175954279, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5142557219743812458, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -1283,6 +1287,10 @@ PrefabInstance:
     - target: {fileID: 3508568455175954279, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508568455175954279, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5142557219743812458, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
       propertyPath: m_Layer
@@ -4569,6 +4577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sheep (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3508568455175954279, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3763913638687406041, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.78
@@ -4937,6 +4949,10 @@ PrefabInstance:
     - target: {fileID: 3508568455175954279, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508568455175954279, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5142557219743812458, guid: 367f41d40166e4816808bbcc31ed0ea6, type: 3}
       propertyPath: m_Layer
