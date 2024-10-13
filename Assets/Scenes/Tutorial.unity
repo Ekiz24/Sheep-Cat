@@ -809,7 +809,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4c8684914b843476f8f42d76d224a1ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1106,17 +1106,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Make sounds to move a cat.
+  m_text: 'Welcome to Sheep Cats!
 
-    Try here how the cat walks around.
+    A game about musical notes.
 
-    Watch
-    at the indicator in order to see in what direction the cat should go.
+    Making specific
+    notes will move the cat around the screen.
 
-    P.S.
-    Press C to meow
+    Try  making some sounds now!
 
-'
+    (Press
+    ''c'' to meow.)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6c12f16b32b9813458023713d6a4120d, type: 2}
   m_sharedMaterial: {fileID: 9085773988360223050, guid: 6c12f16b32b9813458023713d6a4120d, type: 2}
