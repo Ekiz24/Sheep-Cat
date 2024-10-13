@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SheepEscapeFromCat : MonoBehaviour
 {
+    private Animator animator;
     [SerializeField] float sheepSpeed = 1f;
     [SerializeField] float sheepMoveDuration = 0.5f;
     public bool isSheepStartMoving = false;
@@ -14,6 +15,11 @@ public class SheepEscapeFromCat : MonoBehaviour
     Vector2 catPosition;
     Vector2 escapeDirection;
     float distance;
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -48,6 +54,7 @@ public class SheepEscapeFromCat : MonoBehaviour
         if (collision.tag == "Cat" && !isSheepStartMoving)
         {
             isSheepStartMoving = true;
+            animator.SetBool("isSheepStartMoving", true);
         }
     }
 
@@ -56,6 +63,7 @@ public class SheepEscapeFromCat : MonoBehaviour
         if (collision.tag == "Cat" && !isSheepStartMoving)
         {
             isSheepStartMoving = false;
+            animator.SetBool("isSheepStartMoving", false);
         }
     }
 
@@ -66,4 +74,6 @@ public class SheepEscapeFromCat : MonoBehaviour
         isSheepStartMoving = false;
         SheepEscaping();
     }
+
+   
 }
