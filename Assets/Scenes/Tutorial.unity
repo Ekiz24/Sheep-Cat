@@ -344,7 +344,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 172
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1063,7 +1063,8 @@ MonoBehaviour:
     Watch
     at the indicator in order to see in what direction the cat should go.
 
-'
+    P.S.
+    Press C to meow.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6c12f16b32b9813458023713d6a4120d, type: 2}
   m_sharedMaterial: {fileID: 9085773988360223050, guid: 6c12f16b32b9813458023713d6a4120d, type: 2}
