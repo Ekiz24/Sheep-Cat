@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Tutorial.unity
+    guid: 1b8f0954168f44231a23d8a8f2b58b83
+  - enabled: 1
+    path: Assets/Scenes/MicrophoneCat.unity
     guid: f2c656e0713314fed930796ee6ab93b7
   m_configObjects: {}
