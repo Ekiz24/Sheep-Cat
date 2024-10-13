@@ -604,8 +604,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -856,8 +856,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1033,8 +1033,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: 200, y: 132.6006}
+  m_AnchoredPosition: {x: 0.000011444, y: 0.000015259}
+  m_SizeDelta: {x: 319.5978, y: 169.5352}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936040774
 MonoBehaviour:
@@ -1063,6 +1063,9 @@ MonoBehaviour:
     Watch
     at the indicator in order to see in what direction the cat should go.
 
+    P.S.
+    Press C to meow
+
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6c12f16b32b9813458023713d6a4120d, type: 2}
@@ -1090,8 +1093,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1942,8 +1945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -252}
-  m_SizeDelta: {x: 700, y: 200}
+  m_AnchoredPosition: {x: 0.0037842, y: -369}
+  m_SizeDelta: {x: 1129.3123, y: 322.6606}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028991079
 MonoBehaviour:
@@ -2024,8 +2027,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 385, y: -201.5}
-  m_SizeDelta: {x: 149.714, y: 60.3905}
+  m_AnchoredPosition: {x: 741.47, y: -429.597}
+  m_SizeDelta: {x: 353.62, y: 129.8193}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2038159524
 MonoBehaviour:
@@ -2330,8 +2333,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 307.5, y: 59.4}
-  m_SizeDelta: {x: 67.7619, y: 60.52}
+  m_AnchoredPosition: {x: 450.6941, y: 90.97119}
+  m_SizeDelta: {x: 110.3736, y: 98.5776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2137710782
 MonoBehaviour:
